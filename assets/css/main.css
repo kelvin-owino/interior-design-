@@ -9759,13 +9759,30 @@ header.major {
 ul{
 	list-style: none;
 }
+/* Footer */
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin: auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
 .footer{
 	background-color: #ffffff;
 	padding: 70px 0;
 }
 .footer-col{
 	width: 25%;
-	padding: 0 15px;
+	padding: 0 -15px;
 }
 .footer-col h4{
 	font-size: 18px;
@@ -9786,7 +9803,7 @@ ul{
 	width: 50px;
 }
 .footer-col ul li:not(:last-child){
-	margin-bottom: 10px;
+	margin-bottom: -4px;
 }
 .footer-col ul li a{
 	font-size: 16px;
@@ -9816,12 +9833,13 @@ ul{
 .footer-col .social-links a:hover{
 	color: #FCC923;
 }
+
 /*responsive*/
 @media(max-width: 704px){
 	.footer-col{
-		width: 60%;
-		padding: 0 90px;
-		margin-bottom: -36px;
+		width: 70%;
+		padding: 0 80px;
+		margin-bottom: -34px;
 	}
 }
 @media(max-width: 300px){
